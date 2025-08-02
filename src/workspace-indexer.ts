@@ -25,7 +25,17 @@ export class WorkspaceIndexer {
 
   constructor(workspacePath: string) {
     this.workspacePath = workspacePath;
-    this.loadGitignore();
+    // Initialize gitignore with default patterns, load actual .gitignore async
+    this.gitignore = ignore().add([
+      'node_modules/**',
+      '.git/**',
+      'dist/**',
+      'build/**',
+      '.vscode/**',
+      '*.log',
+      '.DS_Store',
+    ]);
+    this.loadGitignore().catch(console.error);
   }
 
   private async loadGitignore() {
@@ -50,7 +60,15 @@ export class WorkspaceIndexer {
       ]);
     } catch (error) {
       console.error('Error loading .gitignore:', error);
-      this.gitignore = ignore();
+      this.gitignore = ignore().add([
+        'node_modules/**',
+        '.git/**',
+        'dist/**',
+        'build/**',
+        '.vscode/**',
+        '*.log',
+        '.DS_Store',
+      ]);
     }
   }
 

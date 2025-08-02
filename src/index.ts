@@ -459,7 +459,7 @@ ${suggestion.codeExample}
 }
 
 // Start the server
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (process.argv[1] && process.argv[1].includes('index.js')) {
   const server = new ContextAIMCPServer();
   server.run().catch(console.error);
 }
