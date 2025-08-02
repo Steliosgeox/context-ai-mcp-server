@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "context-ai-mcp-server": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["dist/index.js"],
+      "env": {
+        "WORKSPACE_PATH": "${workspaceFolder}"
+      }
+    }
+  }
+}

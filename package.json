@@ -1,0 +1,30 @@
+{
+  "name": "context-ai-mcp-soc",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["mcp", "context", "ai", "server"],
+  "author": "",
+  "license": "ISC",
+  "description": "Context AI MCP Server - Enhances AI capabilities with comprehensive workspace context",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.1",
+    "@types/node": "^24.1.0",
+    "dotenv": "^17.2.1",
+    "fast-glob": "^3.3.3",
+    "fs-extra": "^11.3.0",
+    "glob": "^11.0.3",
+    "ignore": "^7.0.5",
+    "zod": "^3.25.76"
+  }
+}
