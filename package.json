@@ -10,8 +10,8 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsc --watch",
-    "prepare": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node scripts/test-server.js",
+    "prepare": "npm run build"
   },
   "keywords": ["mcp", "context", "ai", "server", "workspace", "analysis", "claude", "vscode"],
   "author": "Stelios Georgoulis <stelios_georgoulis@hotmail.com>",
