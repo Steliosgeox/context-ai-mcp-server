@@ -14,7 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["mcp", "context", "ai", "server", "workspace", "analysis", "claude", "vscode"],
-  "author": "Stylianos Georgoulis",
+  "author": "Stelios Georgoulis <stelios_georgoulis@hotmail.com>",
   "license": "MIT",
   "description": "Context AI MCP Server - Enhances AI capabilities with comprehensive workspace context",
   "repository": {
