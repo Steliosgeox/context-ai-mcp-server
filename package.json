@@ -1,18 +1,39 @@
 {
-  "name": "context-ai-mcp-soc",
+  "name": "context-ai-mcp-server",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
+  "bin": {
+    "context-ai-mcp-server": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsc --watch",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["mcp", "context", "ai", "server"],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["mcp", "context", "ai", "server", "workspace", "analysis", "claude", "vscode"],
+  "author": "Stylianos Georgoulis",
+  "license": "MIT",
   "description": "Context AI MCP Server - Enhances AI capabilities with comprehensive workspace context",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/context-ai-mcp-server.git"
+  },
+  "homepage": "https://github.com/your-username/context-ai-mcp-server#readme",
+  "bugs": {
+    "url": "https://github.com/your-username/context-ai-mcp-server/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "package.json"
+  ],
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
     "typescript": "^5.9.2"
